@@ -32,6 +32,19 @@
 	width: 100%;
 }
 
-.selling-points {
-	text-align: center;
+.row {
+	margin-bottom: 40px;
+}
+
+footer {
+	margin-bottom: 40px;
+}
+
+hr {
+	margin: 40px 0;
+}
+
+p {
+	margin-top: 10px;
+	margin-bottom: 40px;
 }

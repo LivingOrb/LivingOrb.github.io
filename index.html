@@ -4,64 +4,117 @@
 		<meta charset="utf-8"/>
 		<title>Living Orb</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Rajdhani|Raleway" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css"/>
 	</head>
 	<body>
-		<div class="jumbotron cover">
-			<div class="container">
-				<h1>Living Orb</h1>
-				<p>A unique way to play.</p>
-			</div>
-		</div>
+		<div class="header-banner"></div>
 		<div class="container">
-			<p>
-				<em>Living Orb</em> is a tangible game console. Play by rotating it in your hands. The screen is its surface, composed of leds all around. Games are shared on Internet and can be downloaded to the device. Both hardware and software are open-source, so everybody can construct their own.
-			</p>
-			<div class="fullwidth aspect-ratio aspect-ratio-16-9">
-				<iframe class="fullwidth fullheight" src="https://www.youtube.com/embed/QD9XmR1_nS0" frameborder="0" allowfullscreen></iframe>
-			</div>
-			<hr/>
-			<h2>Invent new ways to play</h2>
-			<p>Its unique controller and display allows for unique games.</p>
-			<div class="row">
-				<div class="col-lg-6 text-center">
-					<img src="media/jardin-dalice.jpg" class="fullwidth"/>
-					<p>First prototype at <em>Ludipunk Fest</em> (Montreuil, France, on May 21, 2016).</p>
+			<section>
+				<h1>Living Orb</h1>
+				<div class="float-right width-45 aspect-ratio aspect-ratio-16-9">
+					<iframe class="fullwidth fullheight" src="https://www.youtube.com/embed/QD9XmR1_nS0" frameborder="0" allowfullscreen></iframe>
 				</div>
-				<div class="col-lg-6 text-center">
-					<img src="media/square-tune-magician.jpg" class="fullwidth"/>
-					<p>Decorating the live act of <em>Square Tune Magician</em> at the <em>VIP demoparty</em> (Thoissey, France, on June 11, 2016).</p>
-				</div>
-			</div>
-			<hr/>
-			<h2>Construct your own</h2>
-			<p>Both hardware and software are open-source. You can construct your own customized Living Orb.</p>
-			<div class="row">
-				<div class="col-lg-6 text-center">
-					<img src="media/saou.jpg" class="fullwidth"/>
-					<p>Working on the hardware in the best conditions.</p>
-				</div>
-				<div class="col-lg-6 text-center">
+				<p><em>Living Orb</em> is a tangible game console, with which you can easily create your own enlighted games.</p>
+				<p>The device is an sphere covered by LEDs. It's like its surface is the screen! And you only control it by rotating it, that's all. This allows for unique games!</p>
+				<p>Because both hardware and software are open-source, here we explain how to</p>
+				<ul>
+					<li><strong>construct</strong> your own Living Orb;
+					<li><strong>design</strong> a funny game adapted to the device;
+					<li><strong>develop</strong> the game with Lua;
+					<li><strong>share</strong> your game with others.
+				</ul>
+				<div class="float-clear"></div>
+			</section>
+
+			<section>
+				<h2>Construct your own Living Orb</h2>
+				<figure class="float-left width-45">
 					<img src="media/henri.jpg" class="fullwidth"/>
-					<p>Henri at work, doing its own device.</p>
-				</div>
-			</div>
-			<hr/>
-			<h2>Develop and share your games</h2>
-			<div class="row">
-				<div class="col-lg-6 text-center">
-					<img src="media/editor.jpg" class="fullwidth"/>
-					<p>Write code directly on the device.</p>
-				</div>
-				<div class="col-lg-6 text-center">
+					<figcaption>Henri at work, building his own device.</figcaption>
+				</figure>
+				<p>The devices includes an accelerometer and a digital compass. Therefore it becomes aware of its rotation.</p>
+				<p>It produces light with LEDs driven by a mini-computer: Raspberry Pi, Arduino...</p>
+				<p>Its structure can be a polystyrene sphere,it can also be 3D-printed, or assembled with laser-cut boards.</p>
+				<div class="float-clear"></div>
+				<figure class="float-right width-60">
+					<img src="media/saou.jpg" class="fullwidth"/>
+					<figcaption>Working on the hardware in the best conditions.</figcaption>
+				</figure>
+				<p>On the wiki, you'll find a multitude of designs already tested, the equipments needed for the fabrication, and a lot of advices to support you.</p>
+				<p>So that you enjoy making it!</p>
+				<div class="float-clear"></div>
+			</section>
+
+			<section>
+				<h2>Invent new ways to play</h2>
+				<figure class="float-left width-45">
+					<img src="media/jardin-dalice.jpg" class="fullwidth"/>
+					<figcaption>First prototype at <em>Ludipunk Fest</em> (Montreuil, France, on May 21, 2016).</figcaption>
+				</figure>
+				<p>The device, both a controller and a scren at the same time, invites you to create unique games.</p>
+				<p>Since it's a tangible object, there are new game mechanics to discover.</p>
+				<div class="float-clear"></div>
+				<figure class="float-right width-60">
+					<img src="media/square-tune-magician.jpg" class="fullwidth"/>
+					<figcaption>Decorating the live act of <em>Square Tune Magician</em> at the <em>VIP demoparty</em> (Thoissey, France, on June 11, 2016).</figcaption>
+				</figure>
+				<p>The lights are so beautiful to see, that the Living Orb can even serve as decoration, with no interactions.</p>
+				<div class="float-clear"></div>
+			</section>
+
+			<section>
+				<h2>Develop your games</h2>
+				<figure class="float-right width-45">
+					<img src="media/editor.png" class="fullwidth"/>
+					<figcaption>With the web editor, write code directly on the device.</figcaption>
+				</figure>
+				<p>It's very easy to program games using Lua!</p>
+				<p>The following code turns on a random LED in white:</p>
+				<code><pre>
+-- Initialize the random generator.
+math.randomseed(os.time())
+
+-- Pick a random LED.
+led = math.random(Count)
+
+-- Set as white.
+function update()
+	set_color(led, 1, 1, 1)
+end
+				</pre></code>
+				<div class="float-clear"></div>
+				<figure class="float-left width-45">
 					<img src="media/simulator.jpg" class="fullwidth"/>
-					<p>Test games in the simulator.</p>
-				</div>
-			</div>
-			<hr/>
+					<figcaption>Test games in the simulator.</figcaption>
+				</figure>
+				<p>There is also a simulator to test the games in your browser. This will boost your creation process.</p>
+				<div class="float-clear"></div>
+			</section>
+
+			<section>
+				<h2>Share your art and knowledge</h2>
+				<p>Living orb becomes what you decide to do with. Feel free to customize it as you wish. You can then share your creation to the community!</p>
+				<p>Share also your games. On the game repository, creators exchange their games and collect new ideas.</p>
+			</section>
+
+			<section>
+				<h2>Newsletter</h2>
+				<p>Subscribe to the newsletter to show your support and to get project updates.</p>
+				<p>You will typically receive a mail every few weeks. Your email address won't be used for any other purpose.</p>
+				<form action="https://livingorb.us14.list-manage.com/subscribe/post?u=5fe0031b8fbd85bbb13da7ec6&amp;id=f110464442" method="post" target="_blank">
+					<label>Email address:
+						<input type="email" value="" name="EMAIL">
+					</label>
+					<input type="submit" value="Subscribe" name="subscribe">
+					<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5fe0031b8fbd85bbb13da7ec6_f110464442" tabindex="-1" value=""></div>
+				</form>
+			</section>
+
 			<footer>
+				<hr/>
 				<p>Project by <a href="http://koltes.digital/">Jonathan Giroux</a> and other contributors.</p>
+				<p>Find all ressources on <a href="https://github.com/LivingOrb">GitHub</a>.</p>
 			</footer>
 		</div>
 	</body>

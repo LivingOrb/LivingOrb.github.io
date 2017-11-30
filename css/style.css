@@ -78,8 +78,16 @@ footer {
 	margin-bottom: 40px;
 }
 
-h1, h2, h3, h4 {
+h1, h2 {
 	font-family: 'Rajdhani', sans-serif;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
 }
 
 hr {
@@ -108,4 +116,8 @@ section {
 	height: 60px;
 }
 
-#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+#mc_embed_signup {
+	background:#fff;
+	clear:left;
+	font: 14px Helvetica,Arial,sans-serif;
+}
